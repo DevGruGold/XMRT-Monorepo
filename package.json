@@ -1,0 +1,22 @@
+{
+  "name": "xmrt-monorepo",
+  "version": "1.0.0",
+  "description": "XMRT Ecosystem Monorepo",
+  "private": true,
+  "workspaces": [
+    "core/*",
+    "interfaces/*",
+    "utils/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "typescript": "^5.0.0"
+  }
+}
